@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Lebohang Petane" />
+		<title> Daily Exercises - Mathematics</title>
+		
+		<!-- css libraries -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/index.css" /> 
+		
+		<!-- javascript libraries -->
+		<script src="javascript/jquery-1.12.1.min.js"></script>
+		<script src="javascript/handlebars-v3.0.3.js"></script>
+		<script src="javascript/bootstrap.js"></script>
+		<script src="javascript/datafile.js"></script>
+		<script src="javascript/runfile.js"></script>
+		
+	</head>
+
+	<body>
+		<!-- top part -->
+		<div class="text-center top">
+			&nbsp;
+			<h1> Mathematics </h1>
+			<ol class="breadcrumb" style="background: none;">
+				<li><a href="index.html" id="home_page"><strong>Home</strong></a></li>
+				<li><a href="mathematics.html" id="maths_page"><strong>Mathematics</strong></a></li>
+				<li><b id="next"></b></li>
+			</ol>
+		</div>
+		
+		<div class="container" id="main" style="margin-top:30pt">
+			<div id="modal-image-gallery">
+			</div>
+			<div class="modal fade" style="color:black" id="image_add_form">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header" style="background-color:lightgreen; color:gray">
+							<div class="modal-title">
+								<h5 class="text-center modal_title" ></h5>
+							</div>
+						</div>
+						<div class="modal-body">   
+							<form class="go" method="post">
+								<p>  
+									<label for="username">What's your Name?</label>
+									<input type="text" id="naam" name="username" required class="form-control">
+									<br />
+									<label for="userage">Age?</label>
+									<input type="number" name="userage" required class="form-control">
+									<br />
+									
+									<label for="userlevel">Level :</label>
+									<select name="userlevel"> 
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									
+									
+								</p>
+								<button type="submit" class="btn btn-default" id="start">begin</button>
+							</form>
+						</div>
+						<div class="modal-footer text-center" style="background-color:lightgreen">
+							<button class="btn btn-warning" data-dismiss="modal">cancel</button>
+						</div>  
+					</div>
+				</div>
+			</div> 
+			<div class="math_info" id="info_math">
+				<div id="how">
+					<h3 class="lead_head text-center"> How It Works </h3>
+					<hr />
+					<p class="text-center"> <strong>A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim.<br /> In hac habitasse platea dictumst. or sit amet A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet</strong></p>
+				</div>
+				<div id="score">
+					<div id="score_heading">
+						<h3 class="lead_head text-center" style="margin-top:20pt" id="score_heading_name"> Scoring </h3>
+						<hr />
+					</div>
+					<p class="text-center" id="score_description"><strong> A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet</strong></p>
+				</div>
+			</div>
+			<div class="text-center" id="action" style="margin-top:40pt">
+			<div class="row" style="text-align:left" id="row_action">
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="add">
+						<h6 style="text-decoration:none; color: lightgray">Addittion</h6>
+						<img class="icon2" src="images/plus.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="subtract">
+						<h6 style="text-decoration:none; color: lightgray">subtraction</h6>
+						<img class="icon2" src="images/sub.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="multiply">
+						<h6 style="text-decoration:none; color: lightgray">Mutlipl<wbr />ication</h6>
+						<img class="icon2" src="images/multiply.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="divide">
+						<h6 style="text-decoration:none; color: lightgray">Division</h6>
+						<img class="icon2" src="images/div.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="solve">
+						<h6 style="text-decoration:none; color: lightgray">Solve for x</h6>
+						<img class="icon2" src="images/solve.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<a href="#">
+					<div class="thumbnail math_thumbnail" id="lead">
+						<h6 style="text-decoration:none; color: lightgray">Master</h6>
+						<img class="icon2" src="images/leaderboard.png" alt="{{img_alt}}" />
+					</div>
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<p>
+							<dl> 
+							<dt>Mathematics</dt>
+								<dd> Addition </dd>
+								<dd> Subtraction </dd>
+								<dd> Multiplication </dd>
+								<dd> Division </dd>
+								<dd> Solve for x </dd>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<p>
+							<dl> 
+							<dt>Comprehension</dt>
+								<dd> Reading </dd>
+								<dd> Semenatics developments </dd>
+								<dd> Multiple choice questions </dd>
+								<dd> Memory </dd>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<p>
+							<dl> 
+							<dt>Spelling and grammar</dt>
+								<dd> Spelling </dd>
+								<dd> Vocabulary building </dd>
+								<dd> Multiple choice questions </dd>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<p>
+							<dl> 
+							<dt>The Developer</dt>
+								<dd> Name: Lebohang Petane </dd>
+								<dd> Facebook </dd>
+								<dd> LinkedIn </dd>
+							</dl>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</body>	
+</html>

@@ -1,0 +1,59 @@
+<form>
+	<p> This is the story of the magical book. It was that time again. The time where schools would close for a short period of time, it was School Holidays. Every School Holiday my parents would ask me that which I desired to do for the holidays. That time I desired to see a magical show, I have always enjoyed magic. I then told my parents what I desired for the holidays, but to my surprise they told me they had a better proposal for me. They gave me a book, the magical book. The book consisted of many short stories. The magic to the book was that each story that I would read would come to life. I would then read the book each time I wanted to go on a magical journey, and that is the story of the magical book. </p>
+	<fieldset>
+	<legend>1. What is a desire? </legend>
+	<input type="radio" name="1A" />
+	<label for="1A"> A.	To want something. </label>
+	<input type="radio" name="1B" />
+	<label for="1B"> B.	To create something. </label>
+	<input type="radio" name="1C" />
+	<label for="1C"> C.	Both A and B. </label>
+	<br />
+	
+	<legend>2. When did this story happen?</legend>
+	<input type="radio" name="2A" />
+	<label for="2A"> A. During the year. </label>
+	<input type="radio" name="2B" />
+	<label for="2B">B. Family Holiday.</label>
+	<input type="radio" name="2C" />
+	<label for="2C">C. School Holiday.</label>
+	<br />
+
+	<legend>3. What would the writer’s parents ask the writer on every school holidays?</legend>
+	<input type="radio" name="3A" />
+	<label for="3A"> A. How School was.</label>
+	<input type="radio" name="3B" />
+	<label for="3B">B. How the previous Holiday was.</label>
+	<input type="radio" name="3C" />
+	<label for="3C">C. What the writer would desire for the holiday.</label>
+	<br />
+
+	<legend>4.	Why does the writer desire to see a magical show?</legend>
+	<input type="radio" name="4A" />
+	<label for="4A">A. The writer hates magic</label>
+	<input type="radio" name="4B" />
+	<label for="4B">B. The writer enjoys magic.</label>
+	<input type="radio" name="4C" />
+	<label for="4C">C. The writer is interested in magic.</label>
+	<br />
+
+	<legend>5.	Who gave the writer the magical book?</legend>
+	<input type="radio" name="5A" />
+	<label for="5A">A. The writer’s parents.</label>
+	<input type="radio" name="5B" />
+	<label for="5B">B. Nobody.</label>
+	<input type="radio" name="5C" />
+	<label for="5C">C. The writer.</label>
+	<br />
+	
+	<legend>6.	When would the writer read the magical book?</legend>
+	<input type="radio" name="6A" />
+	<label for="6A">A. Every day.</label>
+	<input type="radio" name="6B" />
+	<label for="6B">B. Every time the writer desires to read the book.</label>
+	<input type="radio" name="6C" />
+	<label for="6C">C. Each time the writer wanted to go on a magical journey.</label>
+	<br />
+
+	</fieldset>
+</form>

@@ -1,0 +1,149 @@
+body{
+	color: gray;
+}
+footer{
+	background-color: gray;
+	color: lightgray;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+p{
+	font-weight: 550;
+}
+hr{
+	color:green;
+}
+.bq{
+	font-weight: 550;
+	text-transform: italic;
+}
+.pad{
+	padding: 15pt;
+}
+.detail{
+	color: green;
+}
+.level{
+	color: gray;
+	background-color: lightgray;
+	text-align: right;
+	text-transform: none;
+	font-style: italic;
+	font-size: 12pt;
+	font-family: serif;
+}
+ol a:hover{
+	background-color: lightgreen;
+	text-decoration: none;
+	color: green;
+}
+ol a{
+	color: lightgreen;
+}
+.home_info{
+	margin-top: 30pt;
+	margin-bottom: 30pt;
+	text-decoration: inline;
+}
+.home_info hr{
+	max-width: 400px;
+    border-color: green;
+    border-width: 2px;
+}
+.mark_icon{
+	height: 15pt;
+}
+.math_thumbnail{
+	max-height:200px;
+	min-height: 200px;
+	border: 1pt solid lightgreen;
+}
+.winner{
+	width: 100%;
+	max-height: 200px;
+}
+.breadcrumb{
+	color: lightgreen;
+	font: bold;
+}
+.breadcrumb > li + 
+li:before{
+	color:#ccc;
+	content: ">> ";
+	padding: 0 5px;
+}
+.make_border{
+	border-bottom: 1pt solid gray;
+}
+.lead_head{
+	color: gray;
+	font-family: serif;
+	font-weight: 550;
+}
+.top{
+	color: white;
+	margin-top:0pt;
+	background: url('../images/mypic.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	height: 130pt;
+}
+.top h1{
+	font-family: serif;
+	outline-color: lightgreen;
+	font-weight: 750;
+}
+.top p{
+	color: lightgreen;
+}
+
+.mid{
+	background-color: white;
+}
+.foot{
+	background-color: gray;
+	color: lightgray;
+}
+.icon{
+	width: 60%;
+	border-radius: 50%;
+}
+.icon2{
+	position: relative;
+	max-height: 100px;
+	border-radius: 50%;
+}
+.exercise{
+	padding: 20pt;
+}
+
+.math_info hr{
+	max-width: 400px;
+    border-color: lightgreen;
+    border-width: 3px;
+}
+
+
+
+/** =================== Comprehension ======================== */
+
+
+
+.comprehension_thumbnail{
+	max-height: 500px;
+	border: 2pt solid lightgray;
+	background-color: gray;
+}
+.magical_book{
+	max-width: 100%;
+	height: 100%;
+}
