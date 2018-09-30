@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	
+
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="author" content="Lebohang Petane" />
+		<link rel="icon" href="images/myicon.png">
 		<title> Daily Exercises - Mathematics</title>
-		
+
 		<!-- css libraries -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
-		<link rel="stylesheet" type="text/css" href="css/index.css" /> 
-		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
 		<!-- javascript libraries -->
 		<script src="javascript/jquery-1.12.1.min.js"></script>
 		<script src="javascript/handlebars-v3.0.3.js"></script>
 		<script src="javascript/bootstrap.js"></script>
 		<script src="javascript/datafile.js"></script>
 		<script src="javascript/runfile.js"></script>
-		
+
 	</head>
 
 	<body>
@@ -32,7 +33,7 @@
 				<li><b id="next"></b></li>
 			</ol>
 		</div>
-		
+
 		<div class="container" id="main" style="margin-top:30pt">
 			<div id="modal-image-gallery">
 			</div>
@@ -44,48 +45,48 @@
 								<h5 class="text-center modal_title" ></h5>
 							</div>
 						</div>
-						<div class="modal-body">   
+						<div class="modal-body">
 							<form class="go" method="post">
-								<p>  
+								<p>
 									<label for="username">What's your Name?</label>
 									<input type="text" id="naam" name="username" required class="form-control">
 									<br />
 									<label for="userage">Age?</label>
 									<input type="number" name="userage" required class="form-control">
 									<br />
-									
+
 									<label for="userlevel">Level :</label>
-									<select name="userlevel"> 
+									<select name="userlevel">
 										<option>1</option>
 										<option>2</option>
 										<option>3</option>
 										<option>4</option>
 										<option>5</option>
 									</select>
-									
-									
+
+
 								</p>
 								<button type="submit" class="btn btn-default" id="start">begin</button>
 							</form>
 						</div>
 						<div class="modal-footer text-center" style="background-color:lightgreen">
 							<button class="btn btn-warning" data-dismiss="modal">cancel</button>
-						</div>  
+						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 			<div class="math_info" id="info_math">
 				<div id="how">
 					<h3 class="lead_head text-center"> How It Works </h3>
 					<hr />
-					<p class="text-center"> <strong>A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim.<br /> In hac habitasse platea dictumst. or sit amet A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet</strong></p>
+					<p class="text-center"> <strong>Enter the type of maths question you would like to do.<br /> The game has five levels to choose from, the higher the level the higher the difficulty. Enter your name age and level and click begin and your test will start withing five seconds. Insure to answer all questions and click finish when you are done by scrolling down.</strong></p>
 				</div>
 				<div id="score">
 					<div id="score_heading">
 						<h3 class="lead_head text-center" style="margin-top:20pt" id="score_heading_name"> Scoring </h3>
 						<hr />
 					</div>
-					<p class="text-center" id="score_description"><strong> A Jellyfish swimming in the sea Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. or sit amet</strong></p>
+					<p class="text-center" id="score_description"><strong>There are 20 questions and each quetion is worth one mark. The game will be timed.</strong></p>
 				</div>
 			</div>
 			<div class="text-center" id="action" style="margin-top:40pt">
@@ -141,13 +142,13 @@
 			</div>
 			</div>
 		</div>
-		
+
 		<footer class="foot">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
 						<p>
-							<dl> 
+							<dl>
 							<dt>Mathematics</dt>
 								<dd> Addition </dd>
 								<dd> Subtraction </dd>
@@ -158,7 +159,7 @@
 					</div>
 					<div class="col-md-3">
 						<p>
-							<dl> 
+							<dl>
 							<dt>Comprehension</dt>
 								<dd> Reading </dd>
 								<dd> Semenatics developments </dd>
@@ -168,7 +169,7 @@
 					</div>
 					<div class="col-md-3">
 						<p>
-							<dl> 
+							<dl>
 							<dt>Spelling and grammar</dt>
 								<dd> Spelling </dd>
 								<dd> Vocabulary building </dd>
@@ -177,17 +178,16 @@
 					</div>
 					<div class="col-md-3">
 						<p>
-							<dl> 
+							<dl>
 							<dt>The Developer</dt>
 								<dd> Name: Lebohang Petane </dd>
-								<dd> Facebook </dd>
-								<dd> LinkedIn </dd>
+								<dd> <a style="color:lightgray;" href="https://www.linkedin.com/in/lebohang-petane-64464589/">LinkedIn</a></dd>
 							</dl>
 						</p>
 					</div>
 				</div>
 			</div>
 		</footer>
-		
-	</body>	
+
+	</body>
 </html>
